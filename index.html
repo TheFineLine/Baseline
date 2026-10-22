@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Fine Line — Art Portfolio</title>
+<meta name="description" content="The Fine Line — original art, illustration and concept work.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Fine Line">
+<meta property="og:description" content="Original art, illustration and concept work.">
+<meta property="og:image" content="assets/images/artworks/bmf-3k-timeline-poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1c1b19">
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">The Fine <span class="thin">Line</span></a>
+    <nav>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <h1>Art, drawn along the fine line.</h1>
+    <div class="rule"></div>
+    <p>Original illustration, character design and concept art. Explore the gallery or get in touch about commissions and prints.</p>
+    <a class="cta" href="gallery.html">View the Gallery</a>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section-title">Featured Work</h2>
+      <p class="section-subtitle">A selection of recent pieces</p>
+      <div class="art-grid" id="featured-grid"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">&copy; <span id="year"></span> The Fine Line. All artwork remains the property of the artist.</div>
+</footer>
+
+<script src="assets/js/gallery-data.js"></script>
+<script src="assets/js/gallery.js"></script>
+<script src="assets/js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
